@@ -1,3 +1,4 @@
+/*Global*/
 *{
     margin: 0;
     padding: 0;
@@ -6,9 +7,10 @@
 }
 
 :root{
-    --cor-principal: rgb(0, 185, 145);
+    --cor-secundaria: rgb(0, 185, 145);
+    --cor-principal: #fff;
 }
-
+/*Tags*/
 ul{
     list-style: none;  
 }
@@ -17,21 +19,117 @@ a{
     text-decoration: none;
 }
 
+a, p, span, h1{
+    color: var(--cor-principal);
+}
+
+h5{
+    font-size: 25px;
+    color: var(--cor-secundaria);
+}
+
 body{
     background-image: radial-gradient(circle, #26045c, #180c4e, #0f0d3e, #0c0b2e, #08061e);
 }
 
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    padding: 10px;
+}
+
+header span{
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+header ul li a{
+    color: var(--cor-principal);
+    transition: ease-in-out 400ms;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header ul li a:hover{
+    color: var(--cor-secundaria);
+}
+
+header ul li a i{
+    margin: 0 10px;
+}
+/*Classes e IDs*/
 .container{
     text-align: center;
 }
 
 .container .name h1{
     font-size: 50px;
-    color: #fff;
 }
 
-.container .name h5{
+#about{
+    width: 650px;
+    margin: 0 auto;
+}
+
+#about > h4{
     font-size: 25px;
-    color: var(--cor-principal);
+    font-weight: 900;
+    color: #fff;
+}
+.container-cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 30%;
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.card:nth-of-type(1) i{
+    margin: 10px 10px 15px 10px;
+    color: #fd7e14;
+}
+
+.card:nth-of-type(2) i{
+    margin: 10px 10px 15px 10px;
+    color: #0c6fb2;
+}
+
+.card:nth-of-type(3) i{
+    margin: 10px 10px 15px 10px;
+    color: #e84d31; 
+}
+
+.card p{
+    color: #000;
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form p{
+    color: var(--cor-secundaria);
+}
+
+.form input{
+    width: 50%;
+}
+
+.form button{
+    width: 15%;
 }
 
