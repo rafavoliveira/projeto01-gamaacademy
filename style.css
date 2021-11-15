@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-principal: rgb(0, 124, 97);
+}
+
+ul{
+    list-style: none;  
+}
+
+a{
+    text-decoration: none;
+}
