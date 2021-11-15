@@ -15,3 +15,8 @@ ul{
 a{
     text-decoration: none;
 }
+
+body{
+    background-image: radial-gradient(circle, #26045c, #180c4e, #0f0d3e, #0c0b2e, #08061e);
+}
+
