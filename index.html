@@ -34,8 +34,8 @@
                 <h1>Rafael Vasconcelos</h1>
                 <h5>Front-End Developer</h5>
             </div><!--name-->
-            <div id="arrow">
-                <i class="fas fa-arrow-alt-circle-down"></i>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-arrow-alt-circle-down fa-2x"></i>
             </div><!--arrow-->
             <div id="about">
                 <h4>Aprendendo na Gama Academy</h4>
@@ -74,5 +74,14 @@
             </div><!--form-->
         </section><!--container-->
     </main><!--main-->
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

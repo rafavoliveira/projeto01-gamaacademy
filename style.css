@@ -67,6 +67,41 @@ header ul li a i{
     margin: 0 10px;
 }
 /*Classes e IDs*/
+#arrow{
+    margin: 15px 0;
+}
+
+#arrow i{
+    color: #fff;
+    cursor: pointer;
+    animation: blink 1.2s steps(5, start) infinite;
+}
+
+@keyframes blink{
+    to{
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 300ms;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+#about{
+    width: 650px;
+    margin: 0 auto;
+    display: none;
+}
+
+.active{
+    display: block !important;
+}
+
 .container{
     text-align: center;
 }
@@ -75,10 +110,6 @@ header ul li a i{
     font-size: 50px;
 }
 
-#about{
-    width: 650px;
-    margin: 0 auto;
-}
 
 #about > h4{
     font-size: 25px;
@@ -88,6 +119,7 @@ header ul li a i{
 .container-cards{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 15px;
 }
 
 .card{
@@ -95,6 +127,7 @@ header ul li a i{
     background-color: #eee;
     padding: 15px;
     border-radius: 15px;
+    box-shadow: 1px 1px 5px 1px #111;
 }
 
 .card:nth-of-type(1) i{
@@ -119,17 +152,45 @@ header ul li a i{
 .form{
     width: 40%;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .form p{
     color: var(--cor-secundaria);
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .form input{
     width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px 0px 0px 15px;
 }
+
+.form input:focus{
+    outline: 0;
+}
+
+
 
 .form button{
     width: 15%;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 15px 15px 0px ;
+    margin-left: -5px;
+    background: linear-gradient(to right, rgb(13, 141, 113) 50%, rgb(0, 185, 145) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 300ms linear;
+    color: #fff;
+}
+
+.form button:hover{
+    background-position: left bottom;
 }
 
